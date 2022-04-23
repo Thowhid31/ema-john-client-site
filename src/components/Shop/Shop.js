@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import useProducts from '../../hooks/useProducts';
 import { addToDb, getStoredCart } from '../../utilities/fakedb';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
@@ -14,10 +13,10 @@ const Shop = () => {
     const [products, setProducts] = useState([]);
 
     useEffect( () =>{
-        fetch(`http://localhost:5000/product?page=${page}$size${size}`)
+        fetch(`http://localhost:5000/product?page=${page}&size=${size}`)
         .then(res => res.json())
         .then(data => setProducts(data));
-    }, []);
+    }, [page, size]);
 
 
     useEffect(()=>{
