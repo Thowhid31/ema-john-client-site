@@ -18,6 +18,11 @@
    border: 1px solid tomato;
 }
 
+.pagination .selected{
+    background-color: tomato;
+    color: aliceblue;
+}
+
 @media screen and (max-width:1100px) {
     .products-container{
         grid-template-columns: repeat(2, 1fr);
