@@ -9,6 +9,8 @@
 8. useCreateUserWithEmailAndPassword from react firebase hooks
 9. if user is created redirects to the expected pages
 10. useSignInWithEmailAndPassword(auth) for signIn;
+11. 
+12. 
 */
 
 
